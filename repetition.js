@@ -58,4 +58,70 @@ favoriteThings.push("Teaching");
 // Visa en array
 console.log(favoriteThings);
 
+// Hur loopar man igenom en array?`Kolla upp for-loop, for-in-loop samt for-of-loop
+
+// Sammanfattning: En samling saker (kan vara av olika typer) som vi kommer åt genom ett index (sakens position)
+
+/*
+  Object
+*/
+
+// En sak med egenskaper
+
+// Exempel 7
+// Skapa ett objekt i JavaScript (metod 1)
+var car = {color: "ful", hasAWheel: true, numberOfSeats: 4};
+// Ett objekt består av egenskaper, varje egenskap består av ett attribut (key) och ett värde (value)
+// color är attribut/key
+// "ful" är värdet
+
+// Annat exempel
+var computer = {color: "gray", brand: "Mac"};
+
+// Metod 2
+var student = {};
+student.name = "Anton";
+student.favoriteTeam = "AIK";
+
+// Metod 3
+var anotherStudent = new Object();
+anotherStudent["name"] = "Oskar";
+anotherStudent["favoriteTeam"] = "HIF";
+
+// Hur hämtar vi något från ett objekt?
+console.log("Den första studenten heter " + student.name); // Punktnotation (dot syntax)
+console.log("Den andra studenten heter " + anotherStudent["name"]);
+
+
+// Objekt i arrayer
+var students = [student, anotherStudent];
+// Hämta namnet på första studenten i arrayen
+console.log("Första studenten i array: " + students[0].name);
+console.log("Andra studenten i array: " + students[1]["name"]);
+
+// Array i array
+var favoriteGames = [["Super Mario Bros 1", "Duck Hunt"], ["Wii Sports Resort", "Zelda Twilight Princess"]];
+// Skriva ut första spelet i första listan
+console.log("Andra spelet i första listan" + favoriteGames[0][1]);
+
+// Array i objekt
+var superMario64 = {title: "Super Mario 64", countries: ["Sverige", "USA"], characters: ["Mario", "Toad", "Peach"]};
+// Hämta första karaktären
+console.log("Första karaktären är " + superMario64.characters[0]);
+console.log("Andra landet är " + superMario64["countries"][1]);
+
+// Objekt i objekt
+var psg = {name: "PSG", playedInChampionsLeague: true, founded: "1951"};
+
+var soccerPlayer = {name: "Zlatan", originalClub: {name: "Malmö FF", playedInChampionsLeague: true, founded: 1901}, currentClub: psg};
+console.log("Året då Zlatans originalklubb startades " + soccerPlayer.originalClub.founded);
+console.log("Zlatans originalklubb heter  " + soccerPlayer["originalClub"]["founded"]);
+
+
+
+
+
+
+
+
 
