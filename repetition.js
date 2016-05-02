@@ -19,4 +19,4 @@ var weekdays = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "
 console.log("Exempel 1. Första veckodagen " + weekdays[0]);
 
 // Spara i en variabel
-var favoriteDay = weekday[4];
+var favoriteDay = weekdays[4];
