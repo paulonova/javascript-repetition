@@ -16,7 +16,7 @@ var weekdays = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "
 
 // Hämta ur vår array på följande sätt
 // Skriva ut första veckodagen
-console.log("Exempel 1. Första veckodagen " + weekday[0]);
+console.log("Exempel 1. Första veckodagen " + weekdays[0]);
 
 // Spara i en variabel
 var favoriteDay = weekday[4];
