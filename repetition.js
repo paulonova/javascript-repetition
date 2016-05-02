@@ -12,7 +12,7 @@
 // Exempel 1
 // En första array (metod 1)
 // Vi initierar en array (berättar vad som finns i den samtidigt som den skapas)
-var weekdays = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"; "Söndag"];
+var weekdays = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag"];
 
 // Hämta ur vår array på följande sätt
 // Skriva ut första veckodagen
