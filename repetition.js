@@ -14,12 +14,12 @@
 // Vi initierar en array (berättar vad som finns i den samtidigt som den skapas)
 var weekdays = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag"];
 
+// Ändra på ett värde
+weekdays[2] = "Lillördag";
+
 // Hämta ur vår array på följande sätt
 // Skriva ut första veckodagen
 console.log("Exempel 1. Första veckodagen " + weekdays[0]);
-
-// Spara i en variabel
-var favoriteDay = weekdays[4];
 
 // Spara i en variabel
 var favoriteDay = weekdays[4];
@@ -56,11 +56,34 @@ favoriteThings.push("Teaching");
 
 // Exempel 6
 // Visa en array
-console.log(favoriteThings);
+console.log("Exempel 6: " + favoriteThings);
 
-// Hur loopar man igenom en array?`Kolla upp for-loop, for-in-loop samt for-of-loop
+// Hur loopar man igenom en array?
 
-// Sammanfattning: En samling saker (kan vara av olika typer) som vi kommer åt genom ett index (sakens position)
+// Exempel 7: Klassisk for-loop
+console.log("Exempel 7");
+for (var i = 0; i < weekdays.length; i++) {
+    console.log("Index " + i + ": " + weekdays[i]);
+}
+
+ 
+// Exempel 9: For-each i Java motsvaras av for-of i JavaScript
+console.log("Exempel 9");
+var txt = "";
+for(var day of weekdays) {
+    txt += day + ", ";
+}
+console.log(txt);
+ 
+// Exempel 10
+// for-in hämtar indexen i en array
+// ...men inte index som motsvarar värdet undefined
+console.log("Exempel 10");
+for(var monthIndex in months) {
+    console.log("Index i array months: " + monthIndex);
+}
+
+// Sammanfattning: En samling saker (kan vara av olika typer) som vi kommer åt genom ett index (sakens position, ett heltal)
 
 /*
   Object
@@ -84,7 +107,7 @@ student.name = "Anton";
 student.favoriteTeam = "AIK";
 
 // Metod 3
-var anotherStudent = new Object();
+var anotherStudent = {};
 anotherStudent["name"] = "Oskar";
 anotherStudent["favoriteTeam"] = "HIF";
 
@@ -102,7 +125,7 @@ console.log("Andra studenten i array: " + students[1]["name"]);
 // Array i array
 var favoriteGames = [["Super Mario Bros 1", "Duck Hunt"], ["Wii Sports Resort", "Zelda Twilight Princess"]];
 // Skriva ut första spelet i första listan
-console.log("Andra spelet i första listan" + favoriteGames[0][1]);
+console.log("Andra spelet i första listan: " + favoriteGames[0][1]);
 
 // Array i objekt
 var superMario64 = {title: "Super Mario 64", countries: ["Sverige", "USA"], characters: ["Mario", "Toad", "Peach"]};
@@ -115,13 +138,6 @@ var psg = {name: "PSG", playedInChampionsLeague: true, founded: "1951"};
 
 var soccerPlayer = {name: "Zlatan", originalClub: {name: "Malmö FF", playedInChampionsLeague: true, founded: 1901}, currentClub: psg};
 console.log("Året då Zlatans originalklubb startades " + soccerPlayer.originalClub.founded);
-console.log("Zlatans originalklubb heter  " + soccerPlayer["originalClub"]["founded"]);
-
-
-
-
-
-
-
+console.log("Zlatans originalklubb heter  " + soccerPlayer["originalClub"]["name"]);
 
 
